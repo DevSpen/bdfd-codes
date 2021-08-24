@@ -1,0 +1,24 @@
+--- Command #1 ---
+Trigger: !mute
+Code:
+$nomention
+$onlyPerms[manageroles;You need the 'manage roles' permission to use that!]
+$argsCheck[>2;Invalid arguments provided! Usage: !mute (user) (time)]
+Successfully muted <@$mentioned[1]> for `$noMentionMessage`!
+$mute[Muted] 
+ 
+--- Command #2 ---
+Trigger: !mute
+Code:
+$nomention
+$replyIn[$noMentionMessage]
+$suppressErrors
+$onlyPerms[manageroles;]
+$argsCheck[>2;]
+$takeRole[$mentioned[1];$roleID[Muted]]
+ 
+$c[
+==== NOTE ====
+Max temp mute time is 40m.
+Replace 'Muted' in $roleID[] / $mute[] with your muted role name.
+]
