@@ -1,0 +1,3 @@
+$nomention
+$title[Meme]
+$image[https://ctk-api.herokuapp.com/meme/$random[1;500]]
