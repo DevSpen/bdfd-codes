@@ -1,0 +1,5 @@
+$nomention
+$onlyPerms[manageroles;You need the 'manage roles' permission to use that!]
+$onlyIf[$mentioned[1]!=;You must mention a user to unmute.]
+$unmute[Muted]
+Successfully unmuted $username[$mentioned[1]]#$discriminator[$mentioned[1]]!
